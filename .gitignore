@@ -5,3 +5,5 @@ Debug/
 *.ptx
 *.cubin
 *.fatbin
+.cproject
+.project

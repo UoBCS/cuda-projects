@@ -1,0 +1,97 @@
+ITERATIONS: 50
+
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+50 iterated launches of the CUDA kernel with 196 blocks of 256 threads
+CUDA_TIMING: 0.8890 ms
+Throughput = 10.7643 GFlops
+Time = 0.00093 s
+Size = 0.01000 Gops
+
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+
+ITERATIONS: 100
+
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+100 iterated launches of the CUDA kernel with 196 blocks of 256 threads
+CUDA_TIMING: 1.7908 ms
+Throughput = 10.8401 GFlops
+Time = 0.00185 s
+Size = 0.02000 Gops
+
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+
+ITERATIONS: 200
+
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+200 iterated launches of the CUDA kernel with 196 blocks of 256 threads
+CUDA_TIMING: 3.5342 ms
+Throughput = 11.1235 GFlops
+Time = 0.00360 s
+Size = 0.04000 Gops
+
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+
+ITERATIONS: 400
+
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+400 iterated launches of the CUDA kernel with 196 blocks of 256 threads
+CUDA_TIMING: 7.1484 ms
+Throughput = 11.0011 GFlops
+Time = 0.00727 s
+Size = 0.08000 Gops
+
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+
+ITERATIONS: 600
+
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+600 iterated launches of the CUDA kernel with 196 blocks of 256 threads
+CUDA_TIMING: 10.6885 ms
+Throughput = 11.0162 GFlops
+Time = 0.01089 s
+Size = 0.12000 Gops
+
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+
+ITERATIONS: 800
+
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+800 iterated launches of the CUDA kernel with 196 blocks of 256 threads
+CUDA_TIMING: 14.1061 ms
+Throughput = 11.2851 GFlops
+Time = 0.01418 s
+Size = 0.16000 Gops
+
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+
+ITERATIONS: 1000
+
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+1000 iterated launches of the CUDA kernel with 196 blocks of 256 threads
+CUDA_TIMING: 17.6765 ms
+Throughput = 11.2689 GFlops
+Time = 0.01775 s
+Size = 0.20000 Gops
+
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done

@@ -1,0 +1,4 @@
+NAIVE IMPLEMENTATION:
+
+Time elapsed for linear config: 0.585184
+Time elapsed for 2D config: 001152

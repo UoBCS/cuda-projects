@@ -1,0 +1,79 @@
+256 threads per block
+==================================================================================
+
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+100 iterated launches of the CUDA kernel with 196 blocks of 256 threads
+CUDA_TIMING: 1.8007 ms
+Throughput = 10.8284 GFlops
+Time = 0.00185 s
+Size = 0.02000 Gops
+
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+
+128 threads per block
+==================================================================================
+
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+100 iterated launches of the CUDA kernel with 391 blocks of 128 threads
+CUDA_TIMING: 1.7535 ms
+Throughput = 11.1297 GFlops
+Time = 0.00180 s
+Size = 0.02000 Gops
+
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+
+512 threads per block
+==================================================================================
+
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+100 iterated launches of the CUDA kernel with 98 blocks of 512 threads
+CUDA_TIMING: 1.8582 ms
+Throughput = 10.4603 GFlops
+Time = 0.00191 s
+Size = 0.02000 Gops
+
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+
+1024 threads per block
+==================================================================================
+
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+100 iterated launches of the CUDA kernel with 49 blocks of 1024 threads
+CUDA_TIMING: 1.9826 ms
+Throughput = 9.5057 GFlops
+Time = 0.00210 s
+Size = 0.02000 Gops
+
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+
+2048 threads per block
+==================================================================================
+
+Not supported
+
+
+
+TASK C
+------
+
+struct __device_builtin__ dim3
+{
+    unsigned int x, y, z;
+#if defined(__cplusplus)
+    __host__ __device__ dim3(unsigned int vx = 1, unsigned int vy = 1, unsigned int vz = 1) : x(vx), y(vy), z(vz) {}
+    __host__ __device__ dim3(uint3 v) : x(v.x), y(v.y), z(v.z) {}
+    __host__ __device__ operator uint3(void) { uint3 t; t.x = x; t.y = y; t.z = z; return t; }
+#endif /* __cplusplus */
+};
